@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Portafolio - Desarrollador</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        .hero {
+            padding: 5rem 1rem;
+            color: white;
+            background-color: #333;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Mi Portafolio</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#" role="button">Descargar CV</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="hero">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p>Soy un desarrollador apasionado por la tecnología y la innovación.</p>
+        </section>
+        <div class="grid" id="proyectos">
+            <section>
+                <hgroup>
+                    <h2>Mis Proyectos</h2>
+                    <h3>Algunos de mis mejores trabajos</h3>
+                </hgroup>
+                <figure>
+                    <img src="tuproyecto.jpg" alt="Proyecto de desarrollo">
+                    <figcaption><a href="#" target="_blank">Ver proyecto</a></figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <section id="contacto" aria-label="Contacto">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Contacto</h2>
+                    <h3>Hablemos sobre oportunidades</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    <button type="submit" onclick="event.preventDefault()">Enviar</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small><a href="#">Privacidad</a> • <a href="#">Términos</a></small>
+    </footer>
+</body>
+</html>
