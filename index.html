@@ -2,70 +2,81 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi Portafolio - Desarrollador</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <style>
-        body {
-            text-align: center;
-        }
-        .hero {
-            padding: 5rem 1rem;
-            color: white;
-            background-color: #333;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeray | Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Mi Portafolio</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#" role="button">Descargar CV</a></li>
-        </ul>
-    </nav>
-    <main class="container">
-        <section class="hero">
-            <h1>Bienvenido a mi Portafolio</h1>
-            <p>Soy un desarrollador apasionado por la tecnología y la innovación.</p>
-        </section>
-        <div class="grid" id="proyectos">
-            <section>
-                <hgroup>
-                    <h2>Mis Proyectos</h2>
-                    <h3>Algunos de mis mejores trabajos</h3>
-                </hgroup>
-                <figure>
-                    <img src="tuproyecto.jpg" alt="Proyecto de desarrollo">
-                    <figcaption><a href="#" target="_blank">Ver proyecto</a></figcaption>
-                </figure>
-            </section>
+    <header>
+        <nav>
+            <div class="logo">Yeray</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="hero-slide" style="background-image: url('img/Captura\ desde\ 2025-01-29\ 02-41-20.png');"></div>
+            <div class="hero-slide" style="background-image: url('img/Captura\ desde\ 2025-01-30\ 04-40-43.png');"></div>
+            <div class="hero-slide" style="background-image: url('ruta-a-tu-carpeta/img3.jpg');"></div>
         </div>
-    </main>
-    <section id="contacto" aria-label="Contacto">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Contacto</h2>
-                    <h3>Hablemos sobre oportunidades</h3>
-                </hgroup>
-                <form class="grid">
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
-                    <input type="email" id="email" name="email" placeholder="Tu Email" required>
-                    <button type="submit" onclick="event.preventDefault()">Enviar</button>
-                </form>
-            </article>
+        <div class="hero-content">
+            <h1>Mis Proyectos</h1>
+            <p>Explora mis trabajos y creaciones en desarrollo.</p>
+            <a href="#projects" class="btn">Ver Proyectos</a>
         </div>
     </section>
-    <footer class="container">
-        <small><a href="#">Privacidad</a> • <a href="#">Términos</a></small>
+    
+    
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Desarrollador apasionado con experiencia en múltiples tecnologías. Me encanta construir soluciones eficientes y atractivas.</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Una solución innovadora que resuelve problemas reales.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Plataforma web optimizada para la mejor experiencia de usuario.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Aplicación con interfaz intuitiva y funcionalidades avanzadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu email" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Yeray. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
