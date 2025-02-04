@@ -1,82 +1,60 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeray | Portafolio</title>
+    <title>Portafolio de Yeray</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Yeray</div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <div class="hero-slider">
-            <div class="hero-slide" style="background-image: url('img/Captura\ desde\ 2025-01-29\ 02-41-20.png');"></div>
-            <div class="hero-slide" style="background-image: url('img/Captura\ desde\ 2025-01-30\ 04-40-43.png');"></div>
-            <div class="hero-slide" style="background-image: url('ruta-a-tu-carpeta/img3.jpg');"></div>
-        </div>
-        <div class="hero-content">
-            <h1>Mis Proyectos</h1>
-            <p>Explora mis trabajos y creaciones en desarrollo.</p>
-            <a href="#projects" class="btn">Ver Proyectos</a>
-        </div>
-    </section>
-    
-    
-    <section id="about">
-        <div class="container">
-            <h2>Sobre mí</h2>
-            <p>Desarrollador apasionado con experiencia en múltiples tecnologías. Me encanta construir soluciones eficientes y atractivas.</p>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Una solución innovadora que resuelve problemas reales.</p>
-                </div>
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>Plataforma web optimizada para la mejor experiencia de usuario.</p>
-                </div>
-                <div class="project-card">
-                    <img src="project3.jpg" alt="Proyecto 3">
-                    <h3>Proyecto 3</h3>
-                    <p>Aplicación con interfaz intuitiva y funcionalidades avanzadas.</p>
+    <!-- Menú Flotante -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#sobre" class="menu-link">Sobre Mí</a></li>
+            <li><a href="#proyectos" class="menu-link">Proyectos</a></li>
+            <li><a href="#contacto" class="menu-link">Contacto</a></li>
+            <li>
+                <a href="cv.pdf" download class="cv-button">Descargar CV</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section id="sobre" class="section">
+        <div class="about-container">
+            <img src="profile.jpg" alt="Foto de perfil" class="profile-pic">
+            <div class="about-text">
+                <h3 class="greeting">Hola, soy</h3>
+                <h1 class="main-title">Yeray Navarro</h1>
+                <h2 class="subtitle">Desarrollador Full Stack</h2>
+                <p class="description">Apasionado por la tecnología y el desarrollo de software, creando soluciones eficientes y escalables.</p>
+                <div class="social-links">
+                    <a href="https://github.com/tuusuario" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+                    <a href="https://linkedin.com/in/tuusuario" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="mailto:tuemail@example.com"><img src="email-icon.png" alt="Email"></a>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu email" required>
-                <textarea placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+
+    <section id="proyectos" class="section">
+        <h2>Mis Proyectos</h2>
+        <div class="projects">
+            <div class="project">Proyecto 1</div>
+            <div class="project">Proyecto 2</div>
         </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Yeray. Todos los derechos reservados.</p>
-    </footer>
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
