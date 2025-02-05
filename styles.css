@@ -51,21 +51,6 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-    /* Desactivar efecto scroll snap en móviles */
-    .container {
-        scroll-snap-type: none;
-        height: auto;
-        overflow-y: auto;
-    }
-
-    .section {
-        height: auto;
-        min-height: 100vh;
-        padding: 20px 0;
-    }
-}
-
 .menu {
     position: fixed;
     top: 20px;
@@ -452,3 +437,32 @@ body {
         text-align: justify;
     }
 }
+
+/* Scroll Snap solo en PC */
+@media screen and (min-width: 769px) {
+    .container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .section {
+        scroll-snap-align: start;
+        height: 100vh;
+    }
+}
+
+/* Desplazamiento libre en móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        scroll-snap-type: none; /* Desactiva el scroll-snap */
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .section {
+        height: auto;
+        min-height: 100vh; /* Asegura que las secciones no se corten */
+    }
+}
+
