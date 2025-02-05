@@ -440,6 +440,11 @@ body {
 
 /* Scroll Snap solo en PC */
 @media screen and (min-width: 769px) {
+    html, body {
+        height: 100vh;
+        overflow: hidden; /* Evita el desplazamiento libre */
+    }
+
     .container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -454,15 +459,19 @@ body {
 
 /* Desplazamiento libre en móviles */
 @media screen and (max-width: 768px) {
+    html, body {
+        height: auto;
+        overflow: auto; /* Permite desplazamiento libre */
+    }
+
     .container {
-        scroll-snap-type: none; /* Desactiva el scroll-snap */
+        scroll-snap-type: none !important; /* Desactiva el scroll-snap */
         overflow-y: auto;
         height: auto;
     }
 
     .section {
         height: auto;
-        min-height: 100vh; /* Asegura que las secciones no se corten */
+        min-height: 100vh;
     }
 }
-
