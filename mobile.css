@@ -1,0 +1,123 @@
+/* mobile.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-header {
+    padding: 20px;
+    background: #1e90ff;
+    color: white;
+    text-align: center;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;
+    background: #222;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+.mobile-profile-pic {
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    border: 4px solid rgba(30, 144, 255, 0.7);
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.mobile-section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    background: #1e90ff;
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 20px;
+}
+
+.mobile-projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.mobile-project {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-button {
+    background: #1e90ff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.contact-form button {
+    background: #1e90ff;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}

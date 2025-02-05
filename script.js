@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+    if (window.innerWidth <= 768) { // Si el ancho de pantalla es menor o igual a 768px
+        window.location.href = "mobile.html"; // Redirige a la versión móvil
+    }
+
     const sections = document.querySelectorAll(".section");
     const menuLinks = document.querySelectorAll(".menu-link");
     let isScrolling = false;
     let currentSectionIndex = 0;
 
-    function isMobile() {
-        return window.innerWidth <= 768;
-    }
-
     function handleScroll(event) {
-        if (isScrolling || isMobile()) return;
+        if (isScrolling) return;
         isScrolling = true;
 
         const direction = event.deltaY > 0 ? 1 : -1;
-        const sectionsArray = Array.from(sections);
         let nextIndex = currentSectionIndex + direction;
 
         if (nextIndex >= 0 && nextIndex < sections.length) {
@@ -52,14 +51,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    if (!isMobile()) {
-        window.addEventListener("wheel", handleScroll);
-    }
-    
-    // Restaurar el scroll normal en móviles sin interferencias
-    if (isMobile()) {
-        document.body.style.overflow = "auto";
-        document.documentElement.style.overflow = "auto";
-    }
+    window.addEventListener("wheel", handleScroll);
 });
-

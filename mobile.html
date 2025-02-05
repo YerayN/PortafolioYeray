@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Yeray - Móvil</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header class="mobile-header">
+        <h1>Yeray Navarro</h1>
+        <p>Desarrollador junior</p>
+    </header>
+    
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#sobre">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="src/CV Yeray Navarro.pdf" target="_blank" class="cv-button">Descargar CV</a></li>
+        </ul>
+    </nav>
+    
+    <section id="sobre" class="mobile-section">
+        <img src="img/foto-perfil.jpeg" alt="Foto de perfil" class="mobile-profile-pic">
+        <p class="description">Soy un desarrollador junior con formación en desarrollo de aplicaciones, con ganas de seguir aprendiendo y creciendo en el mundo del software.</p>
+        <div class="social-links">
+            <a href="https://github.com/YerayN" target="_blank"><img src="img/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/yeray-navarro-0195a934a/" target="_blank"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="mailto:ny93yeray@gmail.com"><img src="img/email-icon.png" alt="Email"></a>
+        </div>
+    </section>
+    
+    <section id="proyectos" class="mobile-section">
+        <h2>Mis Proyectos</h2>
+        <div class="mobile-projects-grid">
+            <div class="mobile-project">
+                <img src="img/project.jpg" alt="Proyecto 1" class="project-img">
+                <h3>CALCULADORA AVANZADA</h3>
+                <p>Aplicación de notas y otras cosas interesantes.</p>
+                <a href="#" class="project-button">Ver Proyecto</a>
+            </div>
+            <div class="mobile-project">
+                <img src="img/project.jpg" alt="Proyecto 2" class="project-img">
+                <h3>PROYECTO XYZ</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#" class="project-button">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="mobile-section">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:ny93yeray@gmail.com">ny93yeray@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+34600123456">+34 637 659 355</a></p>
+        <form action="https://formspree.io/f/mkgobdqn" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <script src="mobile.js"></script>
+</body>
+</html>
