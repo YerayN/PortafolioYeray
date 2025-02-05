@@ -490,8 +490,6 @@ body {
     }
 
     .about-text h2 {
-        font-size: 1.2rem; /* Reducir tamaño del subtítulo */
-        margin-bottom: 15px;
         visibility: hidden;
     }
 
